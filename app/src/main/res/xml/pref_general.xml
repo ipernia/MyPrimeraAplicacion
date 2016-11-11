@@ -1,0 +1,27 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_default_display_name"
+        android:inputType="textCapWords"
+        android:key="example_text"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_nombre_title" />
+
+    <ListPreference
+        android:defaultValue="-1"
+        android:entries="@array/pref_sexo_titulos"
+        android:entryValues="@array/pref_sexo_values"
+        android:key="example_list"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_sexo_title" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="ropa_compartir_habilitar"
+        android:summary="@string/pref_compartir_descripcion"
+        android:title="@string/pref_compartir_title" />
+</PreferenceScreen>

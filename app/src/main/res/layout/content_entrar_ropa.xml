@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_entrar_ropa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="jordi.com.myprimeraaplicacion.entrar_ropa"
+    tools:showIn="@layout/activity_entrar_ropa">
+
+    <TextView
+        android:id="@+id/text_marca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_marca"
+        android:layout_alignBottom="@+id/edit_marca"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:hint="Marca"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/text_talla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/text_modelo"
+        android:layout_alignTop="@+id/spinner_tallas"
+        android:text="Talla" />
+
+    <TextView
+        android:id="@+id/text_modelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modelo"
+        android:layout_alignBaseline="@+id/edit_modelo"
+        android:layout_alignBottom="@+id/edit_modelo"
+        android:layout_alignStart="@+id/text_marca" />
+
+    <CheckBox
+        android:id="@+id/checkBox_megusta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Me gusta"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/edit_precio"
+        android:layout_marginBottom="63dp" />
+
+    <EditText
+        android:id="@+id/edit_precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_above="@+id/checkBox_megusta"
+        android:layout_alignStart="@+id/edit_modelo"
+        android:layout_marginBottom="17dp" />
+
+    <TextView
+        android:id="@+id/text_precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Precio"
+        android:layout_alignBaseline="@+id/edit_precio"
+        android:layout_alignBottom="@+id/edit_precio"
+        android:layout_alignEnd="@+id/text_modelo" />
+
+    <EditText
+        android:id="@+id/edit_modelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Camisa negra"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/text_precio"
+        android:layout_alignStart="@+id/edit_marca"
+        android:layout_marginBottom="28dp" />
+
+    <Spinner
+        android:id="@+id/spinner_tallas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/edit_modelo"
+        android:layout_alignEnd="@+id/edit_modelo" />
+
+    <EditText
+        android:id="@+id/edit_marca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:hint="Zara"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/spinner_tallas"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="34dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/edit_nombre"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/text_marca"
+        android:layout_marginTop="29dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_above="@+id/text_marca"
+        android:layout_alignEnd="@+id/edit_marca"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="22dp"
+        android:id="@+id/image_ropa"
+        android:layout_alignTop="@+id/edit_nombre" />
+
+</RelativeLayout>
